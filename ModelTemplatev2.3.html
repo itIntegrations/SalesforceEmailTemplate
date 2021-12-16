@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="robots" content="noindex, follow">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+</head>
+<style>
+  html,
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0 !important;
+    /*padding: 0 !important;*/
+    padding: 1rem;
+    text-size-adjust: none !important;
+    -ms-text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
+    -webkit-font-smoothing: antialiased;
+    background-color: #EEEEEE;
+    font-size: 16px;
+  }
+
+  body {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: #002173;
+  }
+
+  h1 {
+    font-family: 'Nunito Sans', Helvetica, Arial;
+  }
+
+  .cus-pad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cus-pad2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .ReadMsgBody {
+    width: 100%;
+  }
+
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass,
+  .ExternalClass span,
+  .ExternalClass td,
+  .ExternalClass div {
+    line-height: 100%;
+  }
+
+  #outlook a {
+    padding: 0;
+  }
+
+  table,
+  td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+  }
+
+  body {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+
+  /*no linky*/
+
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+
+  .link-hover:hover {
+    text-decoration: none !important;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .button:hover {
+    background-color: #ffd251 !important;
+  }
+
+  .button-2:hover {
+    background-color: #777671 !important;
+  }
+
+  tr.social-link td a img {
+    height: 20px;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 481px) {
+
+    /**generic styles for content added through editor**/
+    table {
+      width: auto !important;
+    }
+
+    td {
+      display: block;
+      margin: 0 auto;
+      width: auto !important;
+    }
+
+    /**all tds added to template will wrap!**/
+    img {
+      float: none !important;
+      display: block;
+      padding: 0;
+      max-width: 100%;
+      height: auto !important;
+    }
+
+    /****/
+    .container {
+      padding: 0 !important;
+    }
+
+    .no-wrap {
+      width: 100% !important;
+    }
+
+    table.no-wrap td {
+      /**add class no-wrap to table to keep it from wrapping**/
+      display: table-cell !important;
+    }
+
+    table[class="resp"] {
+      width: auto !important;
+      padding: 5px !important;
+    }
+
+    .main-content-area {
+      -webkit-text-size-adjust: 90% !important;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .promo-code {
+      padding: 20px !important;
+    }
+
+    td[class="main-content-area"] h2 {
+      -webkit-text-size-adjust: 80% !important;
+    }
+
+    td[class="force-col"] {
+      /**add this class to any td you'd like to wrap in a one-column layout**/
+      display: block;
+      margin: 0 auto;
+      width: auto !important;
+      padding: 0;
+    }
+
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    /**hide content**/
+    *[class="hide-me"] {
+      display: none !important;
+    }
+
+    img[class="show-img"] {
+      display: block !important;
+      padding-top: 10px;
+      max-height: none !important;
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+  .gf-e-header td a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+</style>
+
+<body style="background-color: #eeeeee;">
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 30px">
+    <tr>
+      <td class="container" align="center" width="100%">
+        <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="resp" width="850">
+          <tbody>
+            <tr style="margin-bottom: 0%;margin-top: 0%; padding-top: 0%;padding-bottom: 0%;">
+              <td class="gf-e-header" style="text-align: right;padding-top: 20px;padding-right: 20px">
+                <a href="https://www.safetypay.com/es/" target="_blank">
+                  <img border="0" src="https://i.ibb.co/yYg7dMg/Safetypay-Larger.png" width="180" />
+                </a>
+              </td>
+            </tr>
+            <tr style="margin-bottom: 0%;margin-top: 0%;padding-top: 0%;padding-bottom: 0%;">
+              <td class="cus-pad">
+                <h2 style="color:#1c4479; margin-bottom: 1px; margin-top: 1px;font-weight: 100;">Guía de Integración
+                </h2>
+                <h3 style="color:#454545; margin-top: 1px;font-weight: 100;">Express REST</h3>
+                <hr>
+              </td>
+            </tr>
+            <tr style="margin-bottom: 0%;margin-top: 0%;padding-top: 0%;padding-bottom: 0%;">
+              <td class="cus-pad2">
+                <p style="color:#454545; font-size: 10pt;">A continuación compartimos con ustedes nuestro manual de
+                  Integración:
+                </p>
+                <ul style="color:#454545; font-size: 10pt;">
+                  <li> Site: <a href="http://developers.safetypay.com/v2.1"
+                      style="color:#0563c1;">http://developers.safetypay.com/v2.1</a>
+                  </li>
+                  <li> Password: SafetyPay2017!</li>
+                </ul>
+              </td>
+            </tr>
+            <tr style="margin-bottom: 0%;margin-top: 0%;padding-top: 0%;padding-bottom: 0%;">
+              <td class="cus-pad2">
+                <p style="color:#454545; font-size: 10pt;">En esta guía encontrarán información de nuestro producto <a
+                  href="http://developers.safetypay.com/v2.1/reference" style="color:#0563c1;">Express API</a> y de
+                los métodos que deben
+                utilizar
+                para la integración con SafetyPay. Antes de comenzar, recuerde revisar el archivo donde obtendrá sus
+                credenciales del ambiente de Sandbox.
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:15px 10px 0 10px; vertical-align: top;">
+                <table>
+                  <colgroup>
+                    <col span="1" style="width: 33.3%;">
+                    <col span="1" style="width: 33.3%;">
+                    <col span="1" style="width: 33.3%;">
+                  </colgroup>
+                  <tr>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;"><img src="https://i.ibb.co/ftd55n9/iconmonstr-connection-8-240.png"
+                        alt="iconmonstr-connection-8-240" border="0" width="50">
+                      </p>
+                        <h4 style="font-weight: 100;margin-top: 10px;text-align: center;">Transaccion</h4>
+                      <span style="font-size: 10pt"><a href="https://developers.safetypay.com/v2.1/reference#createexpresstoken"
+                          style="color:#0563c1;">1. Creación de transacción.</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/overview-2"
+                            style="color:#0563c1;">Guide</a>:
+                          Gu&iacute;a de uso del
+                          m&eacute;todo.
+                        </li>
+                        <li>
+                          <a href="http://developers.safetypay.com/v2.1/reference#createexpresstokenrequest"
+                            style="color:#0563c1;">Reference</a>: Detalle del m&eacute;todo y sus
+                          par&aacute;metros.
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#integration-1"
+                            style="color:#0563c1;">Flujo de Pago con SafetyPay</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/directbank" style="color:#0563c1;">Usar el
+                            banco de Pruebas</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/error-codes" style="color:#0563c1;">Listado de
+                            errores</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/status-codes" style="color:#0563c1;">Estados
+                            de un pedido</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/express-signature-calculator"
+                            style="color:#0563c1;">Generaci&oacute;n de firmas</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/status-codes" style="color:#0563c1;">Reverse Forex</a>
+                        </li>
+                      </ul>
+                    </td>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;"><img src="https://i.ibb.co/Sx7W5Nv/iconmonstr-info-1-240.png" alt="iconmonstr-info-1-240"
+                      border="0" width="50">
+                    </p>
+                      <h4 style="font-weight: 100;margin-top: 10px;text-align: center;">Notificacion</h4>
+                      <span style="font-size: 10pt"><a href="https://developers.safetypay.com/v2.1/docs/notification" style="color:#0563c1;">2.
+                          Recibir la notificaci&oacute;n de
+                          pago.</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/ws-notif"
+                            style="color:#0563c1; ">Guide</a>:
+                          Gu&iacute;a de notificaci&oacute;n
+                          de
+                          SafetyPay.
+                        </li>
+                        <li>
+                          <a href="#" style="color:#0563c1;">GetNewOperationActivity</a>:
+                          Obtener la
+                          lista de pedidos pagados.
+                        </li>
+                        <li>
+                          <a href="#" style="color:#0563c1; ">ConfirmNewOperationActivity</a>:
+                          Confirma&nbsp;la recepci&oacute;n del pedido pagado.
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/express-signature-calculator"
+                            style="color:#0563c1;">Signature</a>: Como realizar la firma para la
+                          notificaci&oacute;n.
+                        </li>
+                      </ul>
+                    </td>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;"><img src="https://i.ibb.co/KWsn6QR/iconmonstr-note-17-240.png" alt="iconmonstr-note-17-240"
+                        border="0" width="50"></p>
+                      <h4 style="font-weight: 100;margin-top: 10px;text-align: center;">Consulta</h4>
+                      <span style="font-size: 10pt"><a href="https://developers.safetypay.com/v2.1/docs/get-an-operation-post"
+                          style="color:#0563c1; ">3. Consultar informaci&oacute;n de
+                          pedidos</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#getoperation"
+                            style="color:#0563c1; ">Guide</a>: Gu&iacute;a de uso del
+                          m&eacute;todo.
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#getoperationrequest"
+                            style="color:#0563c1; ">Reference</a>: Detalles del m&eacute;todo y sus
+                          par&aacute;metros.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+            </tr>
+            <tr style="margin-bottom: 0%;margin-top: 0%;padding-top: 0%;padding-bottom: 0%;">
+              <td class="cus-pad" style="padding-top: 10px;">
+                <h3 style="color:#454545; margin-top: 1px;font-weight: 100;">Tools - Testing - Q&A</h3>
+                <hr>
+              </td>
+            </tr>
+            <tr style="margin-top: 15px;">
+              <td style="padding:15px 10px 0 10px; vertical-align: top;">
+                <table>
+                  <colgroup>
+                    <col span="1" style="width: 33.3%;">
+                    <col span="1" style="width: 33.3%;">
+                    <col span="1" style="width: 33.3%;">
+                  </colgroup>
+                  <tr>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;margin-bottom: 0px;"> <img src="https://i.ibb.co/WcVkVLV/Postman.png" alt="Postman" border="0" width="150">
+                      </p>
+                        <h4 style="font-weight: 100;margin-top: 10px;text-align: center;margin-top: 0px;">Postman</h4>
+                      <span style="font-size: 10pt"><a href="https://documenter.getpostman.com/view/7024782/SVtTzUsi?version=latest#4bd72bc7-263a-4102-b60e-dc6ff8332f0b"
+                          style="color:#0563c1;">Colleccion de Postman - Endpoints REST</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/overview-2"
+                            style="color:#0563c1;">Guide</a>:
+                          Endpoint Get Banks
+                        </li>
+                        <li>
+                          <a href="http://developers.safetypay.com/v2.1/reference#createexpresstokenrequest"
+                            style="color:#0563c1;">Reference</a>:  Endpoint CreateTransaction
+                        </li>
+                      </ul>
+                    </td>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;"><img src="https://i.ibb.co/RzMN2Wh/iconmonstr-flask-2-240-1.png" alt="iconmonstr-flask-2-240-1" border="0" width="50">
+                    </p>
+                      <h4 style="font-weight: 100;margin-top: 10px;text-align: center;">Testing</h4>
+                      <span style="font-size: 10pt"><a href="https://developers.safetypay.com/v2.1/docs/notification" style="color:#0563c1;">
+                          Pagos de prueba, errores comunes y checklist</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/ws-notif"
+                            style="color:#0563c1; ">Guide</a>:
+                          Error al generar Signature
+                        </li>
+                        <li>
+                          <a href="#" style="color:#0563c1;">GetNewOperationActivity</a>:
+                          Error al responder notificación
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/directbank" style="color:#0563c1;">Usar el
+                            banco de Pruebas</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/error-codes" style="color:#0563c1;">Listado de
+                            errores</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/express-signature-calculator"
+                            style="color:#0563c1;">Errores frecuentes</a>
+                        </li>
+                      </ul>
+                    </td>
+                    <td style="padding: 0 10px 0 10px;vertical-align: top;">
+                      <p style="text-align: center;"><img src="https://i.ibb.co/S3CcGzt/iconmonstr-help-4-240-1.png" alt="iconmonstr-help-4-240-1" border="0" width="50"></p>
+                      <h4 style="font-weight: 100;margin-top: 10px;text-align: center;">Consulta</h4>
+                      <span style="font-size: 10pt"><a href="https://developers.safetypay.com/v2.1/docs/get-an-operation-post"
+                          style="color:#0563c1; "> Questions & Answers</a></span>
+                      <ul style="font-size: 10pt">
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#getoperation"
+                            style="color:#0563c1; ">Guide</a>: Nuestro productos
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#getoperation"
+                            style="color:#0563c1; ">Guide</a>: Flujo de integración
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/reference#getoperationrequest"
+                            style="color:#0563c1; ">Reference</a>: EDT
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/v2.1/docs/status-codes" style="color:#0563c1;">Estados
+                            de un pedido</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.safetypay.com/discuss?isFAQ=true" style="color:#0563c1;">Preguntas
+                            Frecuentes</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!--<tr style="margin-bottom: 0%;margin-top: 0%; padding-top: 0%;padding-bottom: 0%;">
+              <td class="cus-pad" style="text-align: center;">
+                <hr>
+                <p style="color:#454545; font-size: 10pt;">
+                  <span>Puedes cambiar entre <i>Guides</i> y <i>Reference </i>en la parte superior izquierda de la
+                    pantalla</span>
+                </p>
+                <img src="https://i.ibb.co/Tbk55DF/chrome-3a-Wf-Gnud-Nf.png" style="margin-bottom: 10px;" border="0">
+                <hr>
+              </td>
+            </tr>-->
+            <tr>
+              <td align="right" class="cus-pad" style="padding: 0 0 0px 15px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr align="center">
+                      <td style="padding-bottom: 30px;padding-top: 30px;font-size: 15px">
+                        © 2021 SafetyPay
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
